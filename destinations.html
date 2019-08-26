@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lumen/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <title>Train Time!</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row" id="nav">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                    <a class="navbar-brand" href="index.html">Train Tracker Express</a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                        data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="navbar-collapse collapse" id="navbarColor01" style="">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Destinations<span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Your Home Station</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="schedule.html">Train Schedule</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </div>
+            </div>
+            </nav>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <h3 class="card-header">Greensboro, NC (GRO)</h3>
+                    <div class="card-body">
+                        <h5 class="card-title">The Crescent</h5>
+                    </div>
+                    <img style="height: 200px; width: 100%; display: block;" src="images/gboro2.png" alt="Card image">
+                    <div class="card-body">
+                        <p class="card-text">1 hour 51 minutes total travel time to your destination.</p>
+                    </div>
+
+                    <div class="card-footer text-muted">
+                        now
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <h3 class="card-header">Charleston, SC (CHS)</h3>
+                    <div class="card-body">
+                        <h5 class="card-title">The Crescent</h5>
+                    </div>
+                    <img style="height: 200px; width: 100%; display: block;" src="images/gboro2.png" alt="Card image">
+                    <div class="card-body">
+                        <p class="card-text">18 hours and 43 minutes total travel time to your destination.</p>
+                    </div>
+
+                    <div class="card-footer text-muted">
+                        now
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <h3 class="card-header">Memphis, TN (MEM)</h3>
+                    <div class="card-body">
+                        <h5 class="card-title">The City of New Orleans</h5>
+                    </div>
+                    <img style="height: 200px; width: 100%; display: block;" src="images/gboro2.png" alt="Card image">
+                    <div class="card-body">
+                        <p class="card-text">53 hours and 21 minutes total travel time to your destination.</p>
+                    </div>
+
+                    <div class="card-footer text-muted">
+                        now
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <h3 class="card-header">Kansas City, MO (KCY)</h3>
+                    <div class="card-body">
+                        <h5 class="card-title">The Southwest Chief</h5>
+                    </div>
+                    <img style="height: 200px; width: 100%; display: block;" src="images/gboro2.png" alt="Card image">
+                    <div class="card-body">
+                        <p class="card-text">45 hours and 14 minutes total travel time to your destination.</p>
+                    </div>
+
+                    <div class="card-footer text-muted">
+                        now
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <h3 class="card-header">Los Angeles, CA (LAX)</h3>
+                    <div class="card-body">
+                        <h5 class="card-title">The Southwest Chief</h5>
+                    </div>
+                    <img style="height: 200px; width: 100%; display: block;" src="images/gboro2.png" alt="Card image">
+                    <div class="card-body">
+                        <p class="card-text">81 hours and 14 minutes total travel time to your destination.</p>
+                    </div>
+
+                    <div class="card-footer text-muted">
+                        now
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <h3 class="card-header">Arkadelphia, AR (ARK)</h3>
+                    <div class="card-body">
+                        <h5 class="card-title">The Texas Eagle</h5>
+                    </div>
+                    <img style="height: 200px; width: 100%; display: block;" src="images/gboro2.png" alt="Card image">
+                    <div class="card-body">
+                        <p class="card-text">51 hours and 31 minutes total travel time to your destination.</p>
+                    </div>
+
+                    <div class="card-footer text-muted">
+                        now
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <h3 class="card-header">Detroit, MI (DET)</h3>
+                    <div class="card-body">
+                        <h5 class="card-title">The Wolverine</h5>
+                    </div>
+                    <img style="height: 200px; width: 100%; display: block;" src="images/gboro2.png" alt="Card image">
+                    <div class="card-body">
+                        <p class="card-text">29 hours and 49 minutes total travel time to your destination.</p>
+                    </div>
+
+                    <div class="card-footer text-muted">
+                        now
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-3">
+                    <h3 class="card-header">Miami, Fl</h3>
+                    <div class="card-body">
+                        <h5 class="card-title">The Silver Star</h5>
+                    </div>
+                    <img style="height: 200px; width: 100%; display: block;" src="images/gboro2.png" alt="Card image">
+                    <div class="card-body">
+                        <p class="card-text">26 hours and 43 minutes total travel time to your destination.</p>
+                    </div>
+
+                    <div class="card-footer text-muted">
+                        now
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    <script type="text/javascript" src="assets/app.js">
+    </script>
+</body>
+
+</html>
