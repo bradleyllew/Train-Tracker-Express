@@ -18,6 +18,7 @@ $(document).ready(function () {
 
     // Variables for the Event Listener
     var name;
+    var destination;
     var firstTrain;
     var frequency = 0;
 
@@ -28,6 +29,7 @@ $(document).ready(function () {
         // Storing and retreiving new train data
         name = $("#option").val().trim();
         console.log("NAME " + name);
+        destination = $("#dest").val().trim();
         firstTrain = $("#firstTrain").val().trim();
         console.log("FIRST TRAIN " + firstTrain);
         frequency = $("#frequency").val();
@@ -36,6 +38,7 @@ $(document).ready(function () {
         // Pushing to database
         database.ref().push({
             name: name,
+            destination: destination,
             firstTrain: firstTrain,
             frequency: frequency,
             dateAdded: firebase.database.ServerValue.TIMESTAMP
@@ -53,7 +56,7 @@ $(document).ready(function () {
         var minAway = childSnapshot.val().frequency - remainder;
         // Next train time
         var nextTrain = moment().add(minAway, "minutes");
-        nextTrain = moment(nextTrain).format("hh:mm");
+        nextTrain = moment(nextTrain).format("HH:mm");
 
         $("#add-row").append("<tr><td>" + childSnapshot.val().name +
             "</td><td>" + childSnapshot.val().destination +
